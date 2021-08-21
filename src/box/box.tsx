@@ -63,8 +63,19 @@ export const Box: FC<IPropsBox | IPropsBoxAsAnchor | IPropsBoxAsImage | IPropsBo
         boxShadow,
         whiteSpace,
         textOverFlow,
+        justify,
+        align,
+        alignContent,
+        alignSelf,
+        direction,
+        basis,
+        grow,
+        shrink,
+        wrap,
+        float,
         children
-    } = props;
+    }
+        = props;
 
     return (
         <BoxStyle
@@ -117,6 +128,16 @@ export const Box: FC<IPropsBox | IPropsBoxAsAnchor | IPropsBoxAsImage | IPropsBo
             $boxShadow={boxShadow}
             $whiteSpace={whiteSpace}
             $textOverFlow={textOverFlow}
+            $justify={justify}
+            $align={align}
+            $alignContent={alignContent}
+            $alignSelf={alignSelf}
+            $direction={direction}
+            $basis={basis}
+            $grow={grow}
+            $shrink={shrink}
+            $wrap={wrap}
+            $float={float}
         >{children}</BoxStyle>
     )
 }
