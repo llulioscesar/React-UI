@@ -73,13 +73,13 @@ export const Box: FC<IPropsBox | IPropsBoxAsAnchor | IPropsBoxAsImage | IPropsBo
         shrink,
         wrap,
         float,
-        children
-    }
-        = props;
+        children,
+        ...rest
+    } = props;
 
     return (
         <BoxStyle
-            {...props}
+            {...rest}
             $animation={animation}
             $textDecoration={textDecoration}
             $visibility={visibility}
