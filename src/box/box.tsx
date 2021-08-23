@@ -73,7 +73,6 @@ export const Box: FC<IPropsBox | IPropsBoxAsAnchor | IPropsBoxAsImage | IPropsBo
         shrink,
         wrap,
         float,
-        children,
         ...rest
     } = props;
 
@@ -138,6 +137,6 @@ export const Box: FC<IPropsBox | IPropsBoxAsAnchor | IPropsBoxAsImage | IPropsBo
             $shrink={shrink}
             $wrap={wrap}
             $float={float}
-        >{children}</BoxStyle>
+        />
     )
 }
